@@ -1,0 +1,83 @@
+.service {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service__content {
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service__content-wrapper {
+  margin: auto;
+}
+
+.service__item {
+  height: 300px;
+  width: 400px;
+  box-sizing: border-box;
+  border: solid 1px rgb(240, 240, 240);
+  background-color: rgb(255, 255, 255);
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service__icon-box {
+  width: 35px;
+  height: 35px;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(133, 133, 133);
+  top: 0px;
+  position: relative;
+  transition: all 220ms linear;
+}
+
+.service__icon {
+  position: absolute;
+  top: 0px;
+  transition: all 220ms linear;
+  opacity: 1;
+}
+
+.service__item:hover .service__icon-box {
+  height: 0px;
+}
+
+.service__item:hover .service__icon {
+  top: -50px;
+  opacity: 0;
+}
+
+.service__item:hover .service__caption-wrapper {
+  margin: 5px 0px 5px;
+}
+
+.service__text {
+  font-size: 16px;
+  color: rgb(165, 165, 165);
+}
+
+.service__caption {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(85, 85, 85);
+}
+
+.service__caption-wrapper {
+  margin: 20px 0px 5px;
+}
+
+@media (max-width: 1024px) {
+  .service__item {
+    height: 300px;
+    width: 100%;
+  }
+}

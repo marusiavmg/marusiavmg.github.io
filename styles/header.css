@@ -1,0 +1,146 @@
+.header-wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.192);
+  background-color: white;
+}
+
+.logo {
+  width: 110px;
+  height: 100px;
+  background: url("../img/logo-dark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  padding: 0px 20px;
+}
+
+.header__menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.menu {
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu__link {
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(85, 85, 85);
+  padding: 10px 0px 8px 8px;
+}
+
+.menu__item_active::before {
+  content: "-";
+  font-size: 30px;
+  color: #17bed2;
+}
+
+.menu__item:not(:first-child)::before {
+  content: "-";
+  font-size: 30px;
+  color: transparent;
+}
+.menu__item:not(:first-child):hover::before {
+  color: #17bed2;
+  cursor: pointer;
+  transition: color 1s ease 0.1ms;
+}
+
+.menu__icon {
+  margin-top: 25px;
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.nav__icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 20px;
+  position: relative;
+}
+
+.nav__icon::before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+}
+
+.nav__icon::after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__btn:checked ~ .menu {
+  max-height: 320px;
+}
+
+.menu__btn:hover ~ .menu__icon .nav__icon {
+  background-color: #17bed2;
+}
+
+.menu__btn:hover ~ .menu__icon .nav__icon::before {
+  background-color: #17bed2;
+}
+
+.menu__btn:hover ~ .menu__icon .nav__icon::after {
+  background-color: #17bed2;
+}
+
+@media (min-width: 770px) {
+  .menu {
+    padding: 29px 0px;
+  }
+  .header__menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu__item {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .menu__icon {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 15px;
+  }
+}

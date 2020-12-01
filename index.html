@@ -3,11 +3,569 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
-    <title>Hello</title>
-</head>
+    <script
+      src="https://kit.fontawesome.com/263fcdfea9.js"
+      crossorigin="anonymous"
+    ></script>
 <body>
-    <h1>Hello world</h1>
-    <i class="icon-chemistry service__icon"></i>
+
+<!-- Header -->
+    <header class="header ">
+        <div class="header-wrap">
+            <div class="logo"></div>
+            <input class="menu__btn" id="menu-btn" type="checkbox" checked>
+            <label class="menu__icon" for="menu-btn">
+                <span class=nav__icon></span>
+            </label>
+            <ul class="menu header__menu">
+                <li class="menu__item menu__item_active"><a href="#" class="menu__link">home</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">pricing</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">about</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">products</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">faq</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+            </ul>
+        </div>
+    </header>
+<!-- Header end-->
+
+
+<!-- Banner -->
+<section id ="top" class="banner">
+    <div class="slider">
+        <input 
+        type="radio"
+        name="radio" 
+        id="slide-1" 
+        checked="checked"
+        class="slider-checker"
+        />
+        <label for="slide-1" class="slider__fake-radio1"></label>
+        <input 
+        type="radio" 
+        name="radio"  
+        id="slide-2" 
+        class="slider-checker"
+        />
+        <label for="slide-2" class="slider__fake-radio2"></label>
+       
+        <div class="slider-inner">
+            <div class="slider__first-banner slider__content-wrap">
+                <h1 class="slider__title">HI-TECH DESIGN</h1>
+                <p class="slider__text">
+                    Lorem ipsum dolor amet consectetur adipiscing dolore<br> magna
+                    aliqua enim minim estudiat veniam siad venumus dolore
+                </p>
+                <div class="slider__button-wrapper">
+                    <a href="#" class="slider__button">explore</a>
+                </div>
+            </div>
+            <div class="slider__second-banner slider__content-wrap">
+                <h1 class="slider__title">HI-TECH DESIGN</h1>
+                <p class="slider__text">
+                    Lorem ipsum dolor amet consectetur adipiscing dolore <br>
+                    aliqua enim minim estudiat veniam siad venumus dolore
+                </p>
+                <div class="slider__button-wrapper">
+                    <a href="#" class="slider__button">explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner end -->
+
+<!-- Service -->
+    <section class="service">
+        <div class="service__content service__content-wrapper ">
+            <div class="service__item">
+                <div class="service__icon-box service__icon-flask">
+                    <i class="icon-chemistry service__icon"></i>
+                </div>
+                <h3 class="service__caption service__caption-wrapper">
+                    Art Of Coding
+                </h3>
+                <p class="service__text">
+                    Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
+                </p>
+            </div>
+            <div class="service__item">
+                <div class="service__icon-box">
+                    <i class="icon-screen-tablet service__icon"></i>
+                </div>
+                <h3 class="service__caption service__caption-wrapper">
+                    Responsive Design
+                </h3>
+                <p class="service__text">
+                    Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
+                </p>
+            </div>
+            <div class="service__item">
+                <div class="service__icon-box">
+                    <i class="icon-badge service__icon"></i>
+                </div>
+                <h3 class="service__caption service__caption-wrapper">
+                    Feature Reach
+                </h3>
+                <p class="service__text">
+                    Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
+                </p>
+            </div>
+            <div class="service__item">
+                <div class="service__icon-box">
+                    <i class="icon-notebook service__icon"></i>
+                </div>
+                <h3 class="service__caption service__caption-wrapper">
+                    Useful Documentation
+                </h3>
+                <p class="service__text">
+                    Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
+                </p>
+            </div>
+            <div class="service__item">
+                <div class="service__icon-box">
+                    <i class="icon-speedometer service__icon"></i>
+                </div>
+                <h3 class="service__caption service__caption-wrapper">
+                    Fast Delivery
+                </h3>
+                <p class="service__text">
+                    Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
+                </p>
+            </div>
+            <div class="service__item">
+                <div class="service__icon-box">
+                    <i class="icon-badge service__icon"></i>
+                </div>
+                <h3 class="service__caption service__caption-wrapper">
+                    Free Plugins
+                </h3>
+                <p class="service__text">
+                    Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
+                </p>
+            </div>
+        </div>
+    </section>
+<!--Service end-->
+
+<!--Latest Products-->
+    <section class="products">
+        <div class="content-box">
+            <div class="title content-box__title" >
+                <h1 class="heading title__heading">Latest Products</h1>
+                <div class="text title__text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</div>
+            </div>
+
+            <div class="products-wrapper">
+                <div class="product">
+                    <div class="img1 product__img"></div>
+                    <h4 class="product__wrap">
+                        <a href="#" class="link product__link">Triangle Roof</a>
+                        <span class="head product__head">MANAGEMENT</span>
+                    </h4>
+                    <p class="text product__text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a href="#" class="link-with-dash">
+                        <div>Read More</div>
+                        <div class="dash link-with-dash__dash"></div>
+                    </a>
+                </div>
+
+                <div class="product">
+                    <div class="img2 product__img"></div>
+                    <h4 class="product__wrap">
+                        <a href="#" class="link product__link">Curved Corners</a>
+                        <span class="head product__head">DEVELOPMENY</span>
+                    </h4>
+                    <p class="text product__text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a href="#" class="link-with-dash">
+                        <div>Read More</div>
+                        <div class="dash link-with-dash__dash"></div>
+                    </a>
+                </div>
+
+                <div class="product">
+                    <div class="img3 product__img"></div>
+                    <h4 class="product__wrap">
+                        <a href="#" class="link product__link">Bird On Green</a>
+                        <span class="head product__head">DESIGN</span>
+                    </h4>
+                    <p class="text product__text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a href="#" class="link-with-dash">
+                        <div>Read More</div>
+                        <div class="dash link-with-dash__dash"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Products -->
+
+    <!-- Sponsors -->
+    <section class="sponsors">
+        <!-- <div class="sponsors-content-box"> -->
+            <div class="sponsors-view-field" title="Use SHIFT + Mouse Wheel to scroll">
+                <div class="sponsors-wrapper">
+                    <a href="https://discord.com/" target="blank" class="sponsors__link">
+                        <img class="sponsor__logo" src="./img/clients/01.png">
+                    </a>
+                    <a href="https://www.netflix.com/by-ru/" target="blank" class="sponsors__link">
+                        <img class="sponsor__logo" src="./img/clients/02.png">
+                    </a>
+                    <a href="https://www.broadcom.com/" target="blank" class="sponsors__link">
+                        <img class="sponsor__logo" src="./img/clients/03.png">
+                    </a>
+                    <a href="https://hoopdigital.com/" target="blank" class="sponsors__link">
+                        <img class="sponsor__logo" src="./img/clients/04.png">
+                    </a>
+                    <a href="https://www.airbnb.ru/" target="blank" class="sponsors__link">
+                        <img class="sponsor__logo" src="./img/clients/05.png">
+                    </a>
+                    <a href="https://www.theheinekencompany.com/age-gate/574" target="blank" class="sponsors__link">
+                        <img class="sponsor__logo" src="./img/clients/06.png">
+                    </a>
+               <!--  </div> -->
+            </div>
+        </div>
+    </section>   
+<!-- Sponsors end -->
+
+<!-- Slider Review -->
+
+<section class="reviews">
+    <div class="content reviews__content">
+        <h2 class="content__title content__title-wrapper">Customer Reviews</h2>
+        <div class="carousel reviews__carousel-wrapper">
+            <input type="radio" name="radio-rev" title="review1" id="review-1" class="reviews-radio" checked>
+            <label for="review-1" class="reviews-label1"></label>
+            <input type="radio" name="radio-rev" title="review2" id="review-2" class="reviews-radio">
+            <label for="review-2" class="reviews-label2"></label>
+            <div class="reviews__inner">
+                <div class="reviews__item">
+                    <div class="reviews__text">
+                        <div class="reviews__quotation reviews__quotation-wrapper"></div>
+                        <div class="reviews__quote">
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa
+                                qui officia deserunt mollit anim id est laborum.
+                            </p><br>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex
+                                ea commodo consequat.
+                            </p><br>
+                            <span class="reviews__author">Alex Clarson</span>, Metronic Customer
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__item reviews__item2">
+                    <div class="reviews__text">
+                        <div class="reviews__quotation reviews__quotation-wrapper"></div>
+                        <div class="reviews__quote">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut
+                                laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad
+                                consequat siad minim enum esqudiat dolore.
+                            </p><br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut
+                                laboret tempor incididunt dolore magna consequat siad minim aliqua.
+                            </p><br>
+                            <span class="reviews__author">Joh Milner</span>, Metronic Customer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Slider Reviews end -->
+
+<!-- Price -->
+    <section class="price">
+        <div class="content-box">
+            <div class="price-wrap">
+                <div class="price-item content-box__price-item">
+                    <div class="price-content">
+                        <div class="icon price-content__icon">
+                            <i class="icon-chemistry"></i>
+                        </div>
+                        <div class="price-content__info">
+                            <h2 class="price-content__title ">Starter Kit<span class="price-content__dollar"> - $</span> 49</h2>
+                            <p class="text price-content__text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                        </div>
+                    </div>
+
+                    <div class="list-item-wrap">
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>Basic Features</div>
+                        </div>
+    
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>Up to 5 products</div>
+                        </div>
+    
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>50 Users Panels</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="button price-content__button">CHOOSE</a>                    
+                </div>
+
+                <div class="price-item-middle content-box__price-item-middle">
+                    <div class="price-content">
+                        <div class="icon price-content__icon">
+                            <i class="icon-badge"></i>
+                        </div>
+                        <div class="price-content__info">
+                            <h2 class="price-content__title ">Professional<span class="price-content__dollar"> - $</span> 149</h2>
+                            <p class="text price-content__text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                        </div>
+                    </div>
+
+                    <div class="list-item-wrap">
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>Basic Features</div>
+                        </div>
+    
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>Up to 5 products</div>
+                        </div>
+    
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>50 Users Panels</div>
+                        </div>
+                    </div>
+                    <a href="#" class="button price-content__button">CHOOSE</a>
+                </div>
+
+                <div class="price-item content-box__price-item">
+                    <div class="price-content">
+                        <div class="icon price-content__icon">
+                            <i class="icon-shield"></i>
+                        </div>
+                        <div class="price-content__info">
+                            <h2 class="price-content__title ">Advanced<span class="price-content__dollar"> - $</span> 249</h2>
+                            <p class="text price-content__text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                        </div>
+                    </div>
+
+                    <div class="list-item-wrap">
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>Basic Features</div>
+                        </div>
+    
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>Up to 5 products</div>
+                        </div>
+    
+                        <div class="list-item">
+                            <div class="dash list-item__dash"></div>
+                            <div>50 Users Panels</div>
+                        </div>
+                    </div>
+                    <a href="#" class="button price-content__button">CHOOSE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Price end -->
+
+    <!-- Clients -->
+    <section class="clients">
+         <div class="box">
+             <div class="clients-wrap">
+                <div class="info clients__info">
+                    <h1 class="heading info__heading">Our Clients</h1>
+                    <p class="text info__text ">
+                            Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit sed tempor incididunt ut 
+                        laboret dolore magna aliqua enim minim veniam
+                        exercitation ipsum dolor sit amet consectetur
+                        adipiscing elit sed tempor incididunt ut laboret 
+                        dolore magna aliqua enim minim veniam exercitation
+                    </p>
+                    <br>
+                    <p class="text info__text">
+                            Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit sed tempor incididunt ut 
+                        laboret dolore magna aliqua enim minim veniam
+                        exercitation ipsum dolor sit amet consectetur
+                        adipiscing elit sed tempor incididunt
+                    </p>
+                </div>
+                <div class="clients-img"></div>
+             </div>
+        </div>
+    </section>
+     <!-- Clients end-->
+    
+     <!-- Gallery -->
+    <section class="gallery">
+        <div class="content-box">
+            <div class="gallery-heading-wrap">
+                <div class="gallery-heading gallery__gallery-heading">
+                    <h1 class="heading gallery-heading__heading">Showcase</h1>
+                    <p class="text info__text ">
+                            Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit sed tempor incididunt ut 
+                        laboret dolore magna aliqua enim minim veniam
+                        exercitation ipsum dolor sit amet 
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-wrap">
+                <div class="gallery__img1 gallery__img1-wrapper">
+                    <div class="gallery__dark-bg">
+                        <h2 class="gallery__dark-bg_title-wrapper">
+                            Art Of Coding
+                        </h2>
+                        <p class="gallery__dark-bg_text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery__img2 gallery__img2-wrapper">
+                    <div class="gallery__dark-bg">
+                        <h2 class="gallery__dark-bg_title-wrapper">
+                            Clean Design
+                        </h2>
+                        <p class="gallery__dark-bg_text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery__img3 gallery__img3-wrapper">
+                    <div class="gallery__dark-bg">
+                        <h2 class="gallery__dark-bg_title-wrapper">
+                            Clean Design
+                        </h2>
+                        <p class="gallery__dark-bg_text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery__img4 gallery__img4-wrapper">
+                    <div class="gallery__dark-bg">
+                        <h2 class="gallery__dark-bg_title-wrapper">
+                            Clean Design
+                        </h2>
+                        <p class="gallery__dark-bg_text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery__img5 gallery__img5-wrapper">
+                    <div class="gallery__dark-bg">
+                        <h2 class="gallery__dark-bg_title-wrapper">
+                            Clean Design
+                        </h2>
+                        <p class="gallery__dark-bg_text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Gallery end-->
+
+     <!-- Footer -->
+     <footer class="footer">
+         <div class="footer__seperator">
+            <div class="content-box">
+                <div class="footer-wrap">
+                    <div class="first-column">
+                        <ul class="ref-list">
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Home</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">About</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Products</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Pricing</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Clients</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Careers</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Contact</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="second-column">
+                        <ul class="ref-list">
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Twitter</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Facebook</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">Instagram</a>
+                            </li>
+                            <li class="ref-list__elem">
+                                <a href="#" class="ref-list__ref">YouTube</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="form">
+                        <h1 class="form__heading">Send Us A Note</h1>
+                        <input type="text" class="form__input" placeholder="Name">
+                        <input type="email" class="form__input" placeholder="Email">
+                        <input type="text" class="form__input" placeholder="Phone">
+                        <textarea rows="6" class="form__textarea">Message</textarea>
+                        <button type="submit" class="button-submit form__button">Submit</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <div class="container-copyright">
+            <div class="footer-logo copyright__footer-logo"></div>
+            <div class="copyright-wrap">
+                <p class="copyright">
+                    <a href="#" class="copyright__link">Asentus</a>
+                        Theme Powered by:
+                    <a href="#" class="copyright__link">KeenThemes.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end-->
+
+    <!-- Back to top -->
+    <a href="#top" class="back-to-top">Top</a>
+    <!-- Back to top -->
+
 </body>
 </html>

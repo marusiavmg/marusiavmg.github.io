@@ -1,0 +1,21 @@
+body {
+  background: rgb(250, 250, 250);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+::selection {
+  background: rgb(24, 192, 219);
+  color: rgb(255, 255, 255);
+}
+::-moz-selection {
+  background: rgb(24, 192, 219);
+  color: rgb(255, 255, 255);
+}
+::-webkit-selection {
+  background: rgb(24, 192, 219);
+  color: rgb(255, 255, 255);
+}
